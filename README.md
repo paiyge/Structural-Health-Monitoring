@@ -1,6 +1,6 @@
 # Structural Health Monitoring Pipeline
 
-This project implements a modular, reproducible Python-based pipeline for structural health monitoring using time-series sensor data. The system simulates or loads vibration/thermal/shock data, applies signal processing and anomaly detection techniques, and generates engineering-ready visualizations and reports.
+This project implements a modular, reproducible Python-based pipeline for structural health monitoring using time-series sensor data. The system simulates or loads vibration/thermal/shock data, applies signal processing and anomaly detection techniques, and generates visualizations and reports.
 
 ---
 
@@ -16,22 +16,19 @@ This project implements a modular, reproducible Python-based pipeline for struct
 ---
 
 ## Project Structure
+#### Notebooks 
+- StructuralHealthMonitoring_Demo.ipynb
+#### Python modules
+-  data_loader.py
+-  preprocessing.py
+-  signal_processing.py
+-  anomaly_detection.py
+-  visualization.py
+-  main.py
 
-structural-health-monitoring/
-├── data/ # Raw/simulated datasets
-├── notebooks/ # Demo notebook
-│ └── StructuralHealthMonitoring_Demo.ipynb
-├── src/ # Python modules
-│ ├── data_loader.py
-│ ├── preprocessing.py
-│ ├── signal_processing.py
-│ ├── anomaly_detection.py
-│ ├── visualization.py
-│ └── main.py
-├── reports/ # Saved plots/reports
-├── config/ # (optional) YAML/JSON config files
-├── requirements.txt # Python dependencies
-└── README.md
+#### Other
+- requirements.txt # Python dependencies
+- README.md
 
 ## Outputs saved with a timestamp in the reports/ folder
 - Time-domain signal plot
